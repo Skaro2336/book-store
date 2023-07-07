@@ -3,6 +3,7 @@
 @import url('./scroll-up.css');
 @import url('./modal.css');
 @import url('./loader.css');
+@import url('./fonts.css');
 
 :root {
   --body-background-color: #f6f6f6;
