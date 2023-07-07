@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/DMSans-Regular.ttf');
+  src: url('../../fonts/DMSans-Regular.ttf');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: url('../fonts/DMSans-Italic.ttf');
+  src: url('../../fonts/DMSans-Italic.ttf');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: medium;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/DMSans-Medium.ttf');
+  src: url('../../fonts/DMSans-Medium.ttf');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-style: italic;
   font-weight: 500;
   font-display: swap;
-  src: url('../fonts/DMSans-MediumItalic.ttf');
+  src: url('../../fonts/DMSans-MediumItalic.ttf');
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-style: bold;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/DMSans-Bold.ttf');
+  src: url('../../fonts/DMSans-Bold.ttf');
 }
 
 @font-face {
@@ -43,5 +43,5 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('../fonts/DMSans-BoldItalic.ttf');
+  src: url('../../fonts/DMSans-BoldItalic.ttf');
 }
