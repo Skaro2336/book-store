@@ -61,8 +61,6 @@ async function topBooks() {
               </div>
               </a>
            </div>
-         
-          
         </li>`;
       });
 
