@@ -1,0 +1,56 @@
+.my_title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--text-secondary-color);
+
+}
+
+.my_title_books {
+  color: var(--text-fourth-color);
+}
+
+.title-category-name {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #B4AFAF;
+  text-transform: uppercase;
+}
+
+/* .books-info {
+  display: flex;
+} */
+
+
+.books-container {
+  /* display: flex;
+  flex-direction: column; */
+  list-style: none;
+}
+
+.card-books {
+  
+}
+
+.title-books {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: var(--text-secondary-color);
+
+  text-decoration: none;
+}
+
+.name-author {
+  font-size: 12px;
+  font-style: italic;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  color: #B4AFAF;
+
+  text-decoration: none;
+}
