@@ -30,7 +30,7 @@
     border-radius: 50%;
 
     fill: none;
-    stroke: #fff;
+    stroke: var(--body-secondary-color);
     stroke-width: 1px;
     background: radial-gradient(
     183.6% 183.01% at 59.76% -23.42%,
