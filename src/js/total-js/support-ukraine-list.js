@@ -1,22 +1,23 @@
 import img1 from "/src/img/images/support-ukraine/save-the-children-1x.png";
 import img2 from "/src/img/images/support-ukraine/project-hope-1x.png";
-import img3 from "/src/img/images/support-ukraine/united24.-1x.png";
-import img4 from "/src/img/images/support-ukraine/international-medical-corps-1x.png";
-import img5 from "/src/img/images/support-ukraine/medecins-sans-1x.png";
-import img6 from "/src/img/images/support-ukraine/razom-1x.png";
-import img7 from "/src/img/images/support-ukraine/action-against-hunger-1x.png";
-import img8 from "/src/img/images/support-ukraine/world-vision-1x.png";
-import img9 from "/src/img/images/support-ukraine/sergiy-prytula-1x.png";
+import img3 from "/src/img/images/support-ukraine/international-medical-corps-1x.png";
+import img4 from "/src/img/images/support-ukraine/razom-1x.png";
+import img5 from "/src/img/images/support-ukraine/action-against-hunger-1x.png";
+import img6 from "/src/img/images/support-ukraine/sergiy-prytula-1x.png";
+import img7 from "/src/img/images/support-ukraine/united24.-1x.png";
+import img8 from "/src/img/images/support-ukraine/medecins-sans-1x.png";
+import img9 from "/src/img/images/support-ukraine/world-vision-1x.png";
 
 import img1_2x from "/src/img/images/support-ukraine/save-the-children-2x.png";
 import img2_2x from "/src/img/images/support-ukraine/project-hope-2x.png";
-import img3_2x from "/src/img/images/support-ukraine/united24.-2x.png";
-import img4_2x from "/src/img/images/support-ukraine/international-medical-corps-2x.png";
-import img5_2x from "/src/img/images/support-ukraine/medecins-sans-2x.png";
-import img6_2x from "/src/img/images/support-ukraine/razom-2x.png";
-import img7_2x from "/src/img/images/support-ukraine/action-against-hunger-2x.png";
-import img8_2x from "/src/img/images/support-ukraine/world-vision-2x.png";
-import img9_2x from "/src/img/images/support-ukraine/sergiy-prytula-2x.png";
+import img3_2x from "/src/img/images/support-ukraine/international-medical-corps-2x.png";
+import img4_2x from "/src/img/images/support-ukraine/razom-2x.png";
+import img5_2x from "/src/img/images/support-ukraine/action-against-hunger-2x.png";
+import img6_2x from "/src/img/images/support-ukraine/sergiy-prytula-2x.png";
+import img7_2x from "/src/img/images/support-ukraine/united24.-2x.png";
+import img8_2x from "/src/img/images/support-ukraine/medecins-sans-2x.png";
+import img9_2x from "/src/img/images/support-ukraine/world-vision-2x.png";
+
 export default [
     {
       title: 'Save the Children',
