@@ -48,26 +48,31 @@ async function topBooks() {
     }));
 
     function markupCategoryList(books) {
-      const listBooks = books.map(e => {
-        return `<li>
-          <h2 class= "title-categonry-name">${e.listName}</h2>
-          <div>
-          <a href="#">
-          <div>
-              <img src="${e.bookImage}" alt="">
-              <div class= "info-books'>
-              <h3 class= "title-books">${e.titleBooks}</h3>
-              <p class= "name-author">${e.author}</p>
-              </div>
-              </a>
-           </div>
-         
-          
-        </li>`;
-      });
-
       const list = document.querySelector('.books-container');
-      list.insertAdjacentHTML('beforeend', listBooks.join(''));
+      let firstlist = '';
+
+      books.forEach(e => {
+        if (e.listName !== firstlist) {
+          firstlist = e.listName;
+          const titleCategory = `<h2 class="title-category-name">${e.listName}</h2>`;
+          console.log(titleCategory);
+          list.insertAdjacentHTML('beforeend', titleCategory);
+        }
+
+        const markupBook = `<li>
+      <div>
+        <a href="#">
+          <img src="${e.bookImage}" alt="">
+          <div class="info-books">
+            <h3 class="title-books">${e.titleBooks}</h3>
+            <p class="name-author">${e.author}</p>
+          </div>
+        </a>
+      </div>
+    </li>`;
+
+        list.insertAdjacentHTML('beforeend', markupBook);
+      });
     }
 
     markupCategoryList(bookss);
