@@ -7,6 +7,8 @@
 @import url('./total-css/support-ukraine.css');
 @import url('./total-css/category-books.css');
 @import url('./total-css/best-sellers.css');
+@import url('./total-css/shop-list-di.css');
+
 
 :root {
   --body-background-color: #f6f6f6;
