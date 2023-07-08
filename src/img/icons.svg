@@ -35,5 +35,22 @@
         <symbol id="icon-book-apple" viewBox="0 0 33 32">
             <path d="M0 0h33v32h-33v-32z"></path>
         </symbol>
+        <symbol id="icon-book-shop" viewBox="0 0 34 32">
+            <path d="M0 0h33.778v32h-33.778v-32z"></path>
+        </symbol>
+        <symbol id="icon-logo-light-theme" viewBox="0 0 32 32">
+            <path d="M0 0l16.343 16.171 15.657 15.829v-32h-32z"></path>
+            <path d="M4.457 4.229l11.943 11.829 11.257 11.486h-23.2v-23.314z"></path>
+            <path d="M27.733 27.618l-11.943-11.829-11.257-11.486h23.2v23.314z"></path>
+            <path d="M9.257 9.029l13.6 13.6h-13.6v-13.6z"></path>
+            <path d="M9.257 9.029l13.6 13.6v-13.6h-13.6z"></path>
+        </symbol>
+        <symbol id="icon-logo-dark-theme" viewBox="0 0 32 32">
+            <path d="M0 0l16.343 16.171 15.657 15.829v-32h-32z"></path>
+            <path d="M4.457 4.229l11.943 11.829 11.257 11.486h-23.2v-23.314z"></path>
+            <path d="M27.733 27.618l-11.943-11.829-11.257-11.486h23.2v23.314z"></path>
+            <path d="M9.257 9.029l13.6 13.6h-13.6v-13.6z"></path>
+            <path d="M9.257 9.029l13.6 13.6v-13.6h-13.6z"></path>
+        </symbol>
     </defs>
 </svg>
