@@ -1,37 +1,58 @@
-.charity-bar {
+.support {
     border-radius: 16px;
-    background: radial-gradient(183.6% 183.01% at 59.76% -23.42%,#4f2ee8 18.03%,#fff 100%);
-    
-    padding: 24px 40px;
+    background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
+    padding: 24px 20px;
     text-align: center;
-}
-.charity-bar * {
     font-size: 18px;
-    color: var(--charity-bar-txt-clr);
+    color: var(--body-secondary-color);
+    max-width: 335px;
 }
 
-ol.charity-list {
+@media screen and (min-width: 768px) {
+    .support {
+        padding-bottom: 14px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .support {
+        padding-bottom: 24px;
+        max-width: 356px;
+    }
+
+    .support-down-btn {
+        width: 38px;
+        height: 38px;
+        margin-top: 40px;
+    }
+}
+
+.support-list {
     display: flex;
     gap: 20px;
     flex-direction: column;
-
-	list-style-type: none;
-	counter-reset: li;
+    list-style-type: none;
+    counter-reset: li;
+    padding: 0;
+    margin: 0;
 }
-li.charity-list-item {
+
+li.support-item {
     display: flex;
     align-items: center;
     height: 32px;
 }
-li.charity-list-item:before {
+
+li.support-item:before {
     counter-increment: li;
     content: counter(li, decimal-leading-zero);
-    color: var(--charity-bar-txt-clr);
+    color: var(--body-secondary-color);
     margin-right: 16px;
     align-self: center;
-  }
-.charity-bar-header {
-    color: var(--charity-bar-txt-clr);
+}
+
+.support-header {
+    color: var(--body-secondary-color);
     letter-spacing: -.04em;
     font-size: 28px;
     font-weight: 700;
@@ -39,40 +60,24 @@ li.charity-list-item:before {
     display: flex;
     margin: 0 0 40px 0;
 }
-.charity-bar-header::after {
+
+.support-header::after {
     content: url(/src/img/images/charity-fonds/Ukraine.svg);
     width: 20px;
     height: 20px;
     margin-left: 12px;
 }
-.charity-fond-img {
-fill: var(--charity-bar-txt-clr);
-filter: brightness(0)invert();
-}
-@media screen and (min-width: 1440px) {
-    .charity-bar {
-        min-width: 356px;
-    } 
-}
-@media screen and (min-width: 768px) {
-    .charity-bar {
-        min-width: 50%;
-    }
-    
-}
-@media screen and (min-width: 1440px) {
-    .charity-slider-btn {
-        width: 38px;
-        height: 38px;
-        /* margin-top: 40px; */
-    }
+
+.support-img {
+    fill: var(--body-secondary-color);
+    filter: brightness(0) invert();
 }
 
-.charity-slider-btn {
+.support-down-btn {
     position: relative;
     padding: 5px;
-    margin: 30px auto;
-    background: var(--charity-bar-txt-clr);
+    margin: 0px auto;
+    background: var(--body-secondary-color);
     height: 32px;
     width: 32px;
     border-radius: 50%;
@@ -80,60 +85,62 @@ filter: brightness(0)invert();
     border: none;
     position: relative;
     margin-top: 16px;
-    margin-bottom: 20px;
 }
+
 @media screen and (min-width: 768px) {
-    .charity-slider-btn {
+    .support-down-btn {
         margin-top: 32px;
     }
 }
-@media screen and (min-width: 1440px) {
-    .charity-slider-btn {
-        margin-top: 40px;
+
+@media screen and (min-width: 768px) {
+    .support-container {
+        height: 292px;
     }
 }
-.charity-slider-btn:hover {
+
+@media screen and (min-width: 1440px) {
+    .support-container {
+        height: 292px;
+    }
+}
+
+.support-down-btn:hover {
     transform: translate3d(0, 3px, 0);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.274);
 }
-.charity-slider-btn::after {
+
+.support-down-btn::after {
     content: url('/src/img/images/charity-fonds/down-btn.svg');
-    fill: var(--charity-bar-blue);
+    fill: var(--text-fourth-color);
 }
+
 #tns1-mw {
     overflow: hidden;
 }
+
 .tns-visually-hidden {
     display: none;
 }
 
-/* side menu heights */
-.charity-items-wrapper {
+.support-container {
     overflow: hidden;
 }
+
 @media screen and (max-width: 767.8px) {
-    .charity-items-wrapper {
+    .support-container {
         height: 188px;
     }
 }
-@media screen and (min-width: 768px) {
-    .charity-items-wrapper {
-        height: 292px;
-    }
-    .categories-menu {
-        height: 472px;
-    }
-    .charity-bar {
-        height: 472px;
-    }
-}
+
 @media screen and (max-width: 1439.8px) {
     .shopping-aside {
         display: none;
     }
 }
+
 @media screen and (min-width: 1440px) {
-    .charity-bar {
-        height: 490px;
+    .support {
+        max-height: 490px;
     }
 }
