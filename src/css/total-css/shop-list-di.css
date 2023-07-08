@@ -7,11 +7,19 @@ h1 {
     margin-top: 40px;
 }
 
-.shopping-title{
+.shop-title{
     font-weight: bold;
     font-size: 32px;
-   
 }
+@media screen and (min-width: 768px){
+    .shop-title {
+        
+    font-size: 48px;
+    
+ }
+}
+
+
 .sub-title{
     color: var(--text-fourth-color);
 }
@@ -40,7 +48,6 @@ h1 {
 }
 
 
-
 .shop-text-backgr {
   max-width: 244px;
   opacity: 60%;
@@ -53,11 +60,17 @@ h1 {
 
 
 .shop-div{
-    
     margin-left: 0px;
+
 }
 @media screen and (min-width: 1440px) {
   .shop-div {
     margin-left: 40px;
   }
+}
+
+.displNan{
+
+    display: none;
+
 }
