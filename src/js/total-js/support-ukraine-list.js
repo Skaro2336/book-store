@@ -31,38 +31,38 @@ export default [
       img: `${img2} 1x, ${img2_2x} 2x`,
     },
     {
-      title: 'UNITED24',
-      url: 'https://u24.gov.ua/uk',
-      img: `${img3} 1x, ${img3_2x} 2x`,
-    },
-    {
       title: 'International Medical Corps',
       url: 'https://internationalmedicalcorps.org/country/ukraine/',
-      img: `${img4} 1x, ${img4_2x} 2x`,
-    },
-    {
-      title: 'Medicins Sans Frontieres',
-      url: 'https://www.msf.org/ukraine',
-      img: `${img5} 1x, ${img5_2x} 2x`,
+      img: `${img3} 1x, ${img3_2x} 2x`,
     },
     {
       title: 'RAZOM',
       url: 'https://www.razomforukraine.org/',
-      img: `${img6} 1x, ${img6_2x} 2x`,
+      img: `${img4} 1x, ${img4_2x} 2x`,
     },
     {
       title: 'Action against hunger',
       url: 'https://www.actionagainsthunger.org/location/europe/ukraine/',
-      img: `${img7} 1x, ${img7_2x} 2x`,
-    },
-    {
-      title: 'World vision',
-      url: 'https://www.wvi.org/emergencies/ukraine',
-      img: `${img8} 1x, ${img8_2x} 2x`,
+      img: `${img5} 1x, ${img5_2x} 2x`,
     },
     {
       title: 'Serhiy Prytula Charity Foundation',
       url: 'https://prytulafoundation.org/en',
+      img: `${img6} 1x, ${img6_2x} 2x`,
+    },
+    {
+      title: 'UNITED24',
+      url: 'https://u24.gov.ua/uk',
+      img: `${img7} 1x, ${img7_2x} 2x`,
+    },
+    {
+      title: 'Medicins Sans Frontieres',
+      url: 'https://www.msf.org/ukraine',
+      img: `${img8} 1x, ${img8_2x} 2x`,
+    },
+    {
+      title: 'World vision',
+      url: 'https://www.wvi.org/emergencies/ukraine',
       img: `${img9} 1x, ${img9_2x} 2x`,
     },
   ]

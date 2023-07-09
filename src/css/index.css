@@ -1,10 +1,14 @@
 @import url('./total-css/header.css');
 @import url('./total-css/footer.css');
-@import url('./total-css/scroll-up.css');
+@import url('./total-css/scroll-up-btn.css');
 @import url('./total-css/modal.css');
 @import url('./total-css/loader.css');
 @import url('./total-css/fonts.css');
 @import url('./total-css/support-ukraine.css');
+@import url('./total-css/category-books.css');
+@import url('./total-css/best-sellers.css');
+@import url('./total-css/shop-list-di.css');
+
 
 :root {
   --body-background-color: #f6f6f6;
@@ -28,6 +32,22 @@ body {
   background-color: var(--body-background-color);
 
   transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /* min-width: 100%; */
+  height: auto;
+  display: block;
 }
 
 .container {
