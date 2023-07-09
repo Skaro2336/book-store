@@ -31,53 +31,41 @@ async function topBooks() {
     const response = await newApiService.fetchTopFiveBooks();
     console.log(response);
 
-    const listbook = response.map(info => ({
-      books: info.books,
-    }));
-    console.log(listbook);
-
-    const arrayBooks = listbook.flatMap(e => e.books);
-    console.log(arrayBooks);
-
-    const bookss = arrayBooks.map(info => ({
-      listName: info.list_name,
-      bookImage: info.book_image,
-      author: info.author,
-      titleBooks: info.title,
-      id: info.id,
-    }));
-
     function markupCategoryList(books) {
       const list = document.querySelector('.books-container');
-      let firstlist = '';
 
-      books.forEach(e => {
-        if (e.listName !== firstlist) {
-          firstlist = e.listName;
-          const titleCategory = `<h2 class="title-category-name">${e.listName}</h2>`;
-          console.log(titleCategory);
-          list.insertAdjacentHTML('beforeend', titleCategory);
-        }
-
-        const markupBook = `<li>
-      <div>
-        <a href="#">
-          <img src="${e.bookImage}" alt="">
-          <div class="info-books">
-            <h3 class="title-books">${e.titleBooks}</h3>
-            <p class="name-author">${e.author}</p>
-          </div>
-        </a>
+      books.forEach(category => {
+        const titleCategory = `
+      <div class= "section-category-for-books container">
+        <h2 class="title-category-name">${category.list_name}</h2>
+        <div class= "section-books">
+          ${category.books
+            .map(book => {
+              return `
+                <li>
+                <a href="#">
+                  <div class = "card-book">
+                    <img class = "books-card-img" src="${book.book_image}" alt="">
+                  </div>
+                  <div class="info-books">
+                        <h3 class="title-books">${book.title}</h3>
+                        <p class="name-author">${book.author}</p>
+                      </div>
+                    </a>
+                </li>
+              `;
+            })
+            .join('')}
+       </div>
+       <button class= "books-btn" type ="button">see more</button>
       </div>
-    </li>`;
+    `;
 
-        list.insertAdjacentHTML('beforeend', markupBook);
+        list.insertAdjacentHTML('beforeend', titleCategory);
       });
     }
 
-    markupCategoryList(bookss);
-
-    console.log(bookss);
+    markupCategoryList(response);
   } catch (error) {
     console.warn(error);
   }
