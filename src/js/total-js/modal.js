@@ -2,27 +2,23 @@ import amazon from '../../img/amazon.svg';
 import applebook from '../../img/book-apple.svg';
 import bookshop from '../../img/book-shop.svg';
 
-/* const backDrop = document.querySelector('#book-modal'); */
+
+
+const backDrop = document.querySelector('#book-modal');
 const bestSellerRef = document.querySelector('.books-container');
 const categoriesRef = document.querySelector('.category-books-list');
 const closeBtn = document.querySelector('.modal__close-btn');
-/* const addBookBtn = document.querySelector('.modal__add-book-btn');
-const removeNotification = document.querySelector('.modal__remove-notification');
-const addNotification = document.querySelector('.modal__add-notification');
-const notification = document.querySelector('.modal__notification');
-const modalContent = document.querySelector('.modal__content'); */
+const modalContent = document.querySelector('.modal__content');
 
-/* let idToLocalStorage = null;
-let arrToLocalStorage = []; */
+
 
 closeBtn.addEventListener('click', onBtnCloseClick);
-
 bestSellerRef.addEventListener('click', onCardClick);
-categoriesRef.addEventListener('click', onCardClick);
+
 
 function fetchCategory(id) {
   return fetch(`https://books-backend.p.goit.global/books/${id}`).then(res =>
-    res.json()
+  res.json()
   );
 }
 
@@ -53,14 +49,10 @@ function renderTargetCategory(id) {
 function getCategory(id) {
   fetchCategory(id).then(res => {
     renderTargetCategory(res);
-
-  
   });
 }
-// функція яка при натисканні на "Х", "Escape", або повз модальне вікно закриває модальне вікно
+
 function onBtnCloseClick(e) {
-  console.log(e.code)
-  // console.log(e.currentTarget)
  
 if(e.code === "Escape"){
   backDrop.removeEventListener('keydown', onBtnCloseClick);
@@ -87,10 +79,6 @@ function onCardClick(e) {
   backDrop.addEventListener('click', onBtnCloseClick)
   backDrop.addEventListener('keydown', onBtnCloseClick)
 
-//   if(!JSON.parse(localStorage.getItem('shopping-list')).includes(id)){
-//   addNotification.classList.remove('hidden')
-//   removeNotification.classList.add('hidden')
-// }
 
   
   if(card.classList.contains('books-btn')){
