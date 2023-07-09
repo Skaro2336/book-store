@@ -12,9 +12,10 @@ function t(t){return t&&t.__esModule?t.default:t}var e,r,n,o,i,s="undefined"!=ty
         <div class= "section-books">
           ${t.books.map(t=>`
                 <li>
-                <a href="#">
+                <a href="#"  data-id="${t._id}">
                   <div class = "card-book">
-                    <img class = "books-card-img" src="${t.book_image}" alt="">
+                    <img class = "books-card-img" src="${t.book_image}" alt="${t.title}"    width = "180";
+                    height = "256" loading="lazy">
                   </div>
                   <div class="info-books">
                         <h3 class="title-books">${t.title}</h3>
@@ -27,4 +28,4 @@ function t(t){return t&&t.__esModule?t.default:t}var e,r,n,o,i,s="undefined"!=ty
        <button class= "books-btn" type ="button">see more</button>
       </div>
     `;e.insertAdjacentHTML("beforeend",r)})}(t)}catch(t){console.warn(t)}}(),document.querySelector(".shop-background"),localStorage.setItem("infoBooks",JSON.stringify([]));const e3={author:"dima",book_image:"bla-bla-bla.ua",title:"dream team",list_name:"fantastika",description:"there will be a lot of text for the book description field test…"};function e7(t){let e=localStorage.getItem("infoBooks"),r=JSON.parse(e)||[];r.push(t),localStorage.setItem("infoBooks",JSON.stringify(r))}e7(e3),e7(e3),function(){let t=localStorage.getItem("infoBooks"),e=JSON.parse(t);e&&0!==e.length?console.log(e):console.log("Пусто")}(),function(){let t=document.querySelector("#scroll-top");t.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),window.addEventListener("scroll",function(){let e=window.scrollY;t.classList.toggle("js-scroll-up_hidden",e<700)}),window.addEventListener("load",()=>{window.scrollTo(0,0)})}();
-//# sourceMappingURL=index.c1fc43c4.js.map
+//# sourceMappingURL=index.7c75146f.js.map
