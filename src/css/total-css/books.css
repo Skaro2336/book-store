@@ -1,12 +1,5 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-a {
-  text-decoration: none;
-}
-.title-category-name {
+
+/* .title-category-name {
   letter-spacing: 0.03em;
   color: #b4afaf;
   text-transform: uppercase;
@@ -14,18 +7,15 @@ a {
   margin-bottom: 18px;
   font-size: 14px;
   line-height: 1.28571;
-}
-@media screen and (min-width: 768px) {
+} */
+
+/* @media screen and (min-width: 768px) {
   .title-category-name {
     line-height: 1.71429;
   }
-}
-img {
-  /* min-width: 100%; */
-  height: auto;
-  display: block;
-}
-.books-card-img {
+} */
+
+/* .books-card-img {
   width: 335px;
   height: 485px;
   display: block;
@@ -42,12 +32,13 @@ img {
     width: 218px;
     height: 316px;
   }
-}
-.info-books {
-  width: 218px;
-}
+} */
 
-.title-books {
+/* .info-books {
+  width: 218px;
+} */
+
+/* .title-books {
   letter-spacing: -0.04em;
   color: var(--text-secondary-color);
   height: 18px;
@@ -56,13 +47,15 @@ img {
   font-size: 16px;
   line-height: 1.125;
   overflow: hidden;
-}
-@media screen and (min-width: 768px) {
+} */
+
+/* @media screen and (min-width: 768px) {
   .title-books {
     line-height: 1.125;
   }
-}
-.name-author {
+} */
+
+/* .name-author {
   letter-spacing: -0.04em;
   color: #b4afaf;
   margin: 0;
@@ -72,9 +65,9 @@ img {
   line-height: 1.16667;
   margin-bottom: 32px;
   overflow: hidden;
-}
+} */
 
-.section-books {
+/* .section-books {
   flex-wrap: wrap;
   gap: 24px;
   display: flex;
@@ -114,4 +107,4 @@ img {
   border-radius: 8px;
   margin-bottom: 14px;
   position: relative;
-}
+} */
