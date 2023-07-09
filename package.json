@@ -22,8 +22,7 @@
     "firebase": "^9.23.0",
     "modern-normalize": "^1.1.0",
     "notiflix": "^3.2.6",
-    "simplebar": "^6.2.5",
-    "tiny-slider": "^2.9.4"
+    "simplebar": "^6.2.5"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
