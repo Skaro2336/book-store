@@ -25,11 +25,11 @@
 }
 
 .scroll-up-btn-icon {
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
     border-radius: 50%;
 
-    fill: none;
+    /* fill: none; */
     stroke: var(--body-secondary-color);
     stroke-width: 1px;
     background: radial-gradient(
