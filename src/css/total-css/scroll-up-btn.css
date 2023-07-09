@@ -29,8 +29,8 @@
     cursor: pointer;
     border-radius: 50%;
 
-    /* fill: none; */
-    stroke: var(--body-secondary-color);
+    fill: var(--body-secondary-color);
+    /* stroke: var(--body-secondary-color); */
     stroke-width: 1px;
     background: radial-gradient(
     183.6% 183.01% at 59.76% -23.42%,
@@ -67,7 +67,8 @@
 
 .js-scroll-up .scroll-up-btn-icon:hover,
 .js-scroll-up .scroll-up-btn-icon:focus {
-    stroke: rgba(79, 46, 232, 0.7);
+    /* stroke: rgba(79, 46, 232, 0.7); */
+    fill: rgba(79, 46, 232, 0.7);
     animation-play-state: paused;
 }
 

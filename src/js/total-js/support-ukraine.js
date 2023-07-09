@@ -1,4 +1,5 @@
 import supportUkraineList from "./support-ukraine-list";
+import { tns } from "../../../node_modules/tiny-slider/src/tiny-slider"
 
 const supportUkraineListEl = document.querySelector('.support-list');
 const downBtn = document.querySelector('.support-down-btn');
