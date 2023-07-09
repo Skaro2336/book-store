@@ -26,6 +26,12 @@
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .title-category-name {
+    line-height: 1.71429;
+  }
+}
+
 .title-books {
   letter-spacing: -0.04em;
   color: var(--text-secondary-color);
@@ -40,6 +46,26 @@
 @media screen and (min-width: 768px) {
   .title-books {
     line-height: 1.125;
+  }
+}
+
+.books-card-img {
+  width: 335px;
+  height: 485px;
+  display: block;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .books-card-img {
+    width: 180px;
+    height: 256px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .books-card-img {
+    width: 218px;
+    height: 316px;
   }
 }
 
@@ -61,6 +87,7 @@
   display: flex;
   overflow: hidden;
 }
+
 @media screen and (min-width: 768px) {
   .section-books {
     justify-content: space-around;
