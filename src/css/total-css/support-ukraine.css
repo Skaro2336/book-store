@@ -1,11 +1,30 @@
+.support-ukraine {
+    width: 335px;
+    height: 352px;
+}
+
+@media screen and (min-width: 768px) {
+    .support-ukraine {
+        width: 335px;
+        height: 472px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .support-ukraine {
+        width: 356px;
+        height: 490px;
+    }
+}
+
 .support {
     border-radius: 16px;
     background: radial-gradient(183.6% 183.01% at 59.76% -23.42%, #4f2ee8 18.03%, #fff 100%);
-    padding: 24px 20px;
+    padding: 24px 40px 20px 40px;
     text-align: center;
     font-size: 18px;
     color: var(--body-secondary-color);
-    max-width: 335px;
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -17,7 +36,7 @@
 @media screen and (min-width: 1440px) {
     .support {
         padding-bottom: 24px;
-        max-width: 356px;
+        /* max-width: 356px; */
     }
 
     .support-down-btn {
