@@ -43,9 +43,10 @@ async function topBooks() {
             .map(book => {
               return `
                 <li>
-                <a href="#">
+                <a href="#"  data-id="${book._id}">
                   <div class = "card-book">
-                    <img class = "books-card-img" src="${book.book_image}" alt="">
+                    <img class = "books-card-img" src="${book.book_image}" alt="${book.title}"    width = "180";
+                    height = "256" loading="lazy">
                   </div>
                   <div class="info-books">
                         <h3 class="title-books">${book.title}</h3>
