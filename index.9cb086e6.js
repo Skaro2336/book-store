@@ -1,2 +1,0 @@
-!function(){document.querySelector(".shop-background");localStorage.setItem("infoBooks",JSON.stringify([]));var o,e,t={author:"dima",book_image:"bla-bla-bla.ua",title:"dream team",list_name:"fantastika",description:"there will be a lot of text for the book description field test…"};function a(o){var e=localStorage.getItem("infoBooks"),t=JSON.parse(e)||[];t.push(o),localStorage.setItem("infoBooks",JSON.stringify(t))}a(t),a(t),o=localStorage.getItem("infoBooks"),(e=JSON.parse(o))&&0!==e.length?console.log(e):console.log("Пусто")}();
-//# sourceMappingURL=index.9cb086e6.js.map
