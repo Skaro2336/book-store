@@ -36,7 +36,7 @@ async function topBooks() {
 
       books.forEach(category => {
         const titleCategory = `
-      <div class= "section-category-for-books container">
+      <div class= "section-category-for-books ">
         <h2 class="title-category-name">${category.list_name}</h2>
         <div class= "section-books">
           ${category.books
