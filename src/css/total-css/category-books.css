@@ -1,5 +1,14 @@
 .category-books {
   display: flex;
+  max-height: 258px;
+  
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-color: var(--scroll-category-color)transparent;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+
+  margin-bottom: 40px;
 }
 
 .list-category-books {
@@ -13,6 +22,8 @@
   opacity: 60%;
   list-style: none;
   cursor: pointer;
+  /* max-height: 258px;
+  overflow-y: scroll; */
 }
 
 
