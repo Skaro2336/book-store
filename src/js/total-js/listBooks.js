@@ -57,10 +57,9 @@ async function listForCategory() {
 async function topBooks() {
   try {
     const response = await fetchTopFiveBooks();
-    console.log(response);
     markupCategoryList(response);
   } catch (error) {
-    console.log(error);
+    console.warn(error);
   }
 }
 
