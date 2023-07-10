@@ -15,8 +15,10 @@
   cursor: pointer;
 }
 
-
 .list-category-books li:hover {
   color: var(--text-fourth-color);
 }
 
+.all-category {
+  text-transform: uppercase;
+}
