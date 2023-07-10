@@ -43,5 +43,17 @@ function t(t){return t&&t.__esModule?t.default:t}var e,i,n,o,r,a="undefined"!=ty
       
 </div>
 
-    `;ia.innerHTML="",ia.innerHTML=i}(e)})}(o),ii.classList.remove("is-hidden"))}),document.querySelector(".shop-background"),localStorage.setItem("infoBooks",JSON.stringify([]));const il={author:"dima",book_image:"bla-bla-bla.ua",title:"dream team",list_name:"fantastika",description:"there will be a lot of text for the book description field test…"};function ic(t){let e=localStorage.getItem("infoBooks"),i=JSON.parse(e)||[];i.push(t),localStorage.setItem("infoBooks",JSON.stringify(i))}ic(il),ic(il),function(){let t=localStorage.getItem("infoBooks"),e=JSON.parse(t);e&&0!==e.length?console.log(e):console.log("Пусто")}(),function(){let t=document.querySelector("#scroll-top");t.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),window.addEventListener("scroll",function(){let e=window.scrollY;t.classList.toggle("js-scroll-up_hidden",e<700)}),window.addEventListener("load",()=>{window.scrollTo(0,0)})}();
-//# sourceMappingURL=index.569d7ded.js.map
+    `;ia.innerHTML="",ia.innerHTML=i}(e)})}(o),ii.classList.remove("is-hidden"))});const il=document.querySelector(".shop-background"),ic=document.querySelector("modal__add-book-btn");console.log(ic),localStorage.setItem("infoBooks",JSON.stringify([])),ic.addEventListener("click",t=>{t.preventDefault(),console.log(t)}),function(){let t=localStorage.getItem("infoBooks"),e=JSON.parse(t);e&&0!==e.length?(il.classList.add("displNan"),function(t){t.map(t=>`
+      <li>
+        <div data-id="${t._id}">
+          <div class="card-book">
+            <img class="books-card-img" src="${t.book_image}" alt="${t.title}" width="180" height="256" loading="lazy">
+          </div>
+          <div class="info-books">
+            <h3 class="title-books">${t.title}</h3>
+            <p class="name-author">${t.author}</p>
+          </div>
+        </div>
+      </li>
+    `).join("")}(e)):il.classList.remove("displNan")}(),function(){let t=document.querySelector("#scroll-top");t.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),window.addEventListener("scroll",function(){let e=window.scrollY;t.classList.toggle("js-scroll-up_hidden",e<700)}),window.addEventListener("load",()=>{window.scrollTo(0,0)})}();
+//# sourceMappingURL=index.04bb526a.js.map
