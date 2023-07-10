@@ -1,7 +1,7 @@
 
 
 const shopDiv = document.querySelector('.shop-background');
-const btn = document.querySelector('modal__add-book-btn');
+const btn = document.querySelector('.modal__add-book-btn');
 
 console.log(btn);
 
