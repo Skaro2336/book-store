@@ -43,7 +43,7 @@ function t(t){return t&&t.__esModule?t.default:t}var e,i,n,o,r,a="undefined"!=ty
       
 </div>
 
-    `;ia.innerHTML="",ia.innerHTML=i}(e)})}(o),ii.classList.remove("is-hidden"))});const il=document.querySelector(".shop-background"),ic=document.querySelector("modal__add-book-btn");console.log(ic),localStorage.setItem("infoBooks",JSON.stringify([])),ic.addEventListener("click",t=>{t.preventDefault(),console.log(t)}),function(){let t=localStorage.getItem("infoBooks"),e=JSON.parse(t);e&&0!==e.length?(il.classList.add("displNan"),function(t){t.map(t=>`
+    `;ia.innerHTML="",ia.innerHTML=i}(e)})}(o),ii.classList.remove("is-hidden"))});const il=document.querySelector(".shop-background"),ic=document.querySelector(".modal__add-book-btn");console.log(ic),localStorage.setItem("infoBooks",JSON.stringify([])),ic.addEventListener("click",t=>{t.preventDefault(),console.log(t)}),function(){let t=localStorage.getItem("infoBooks"),e=JSON.parse(t);e&&0!==e.length?(il.classList.add("displNan"),function(t){t.map(t=>`
       <li>
         <div data-id="${t._id}">
           <div class="card-book">
@@ -56,4 +56,4 @@ function t(t){return t&&t.__esModule?t.default:t}var e,i,n,o,r,a="undefined"!=ty
         </div>
       </li>
     `).join("")}(e)):il.classList.remove("displNan")}(),function(){let t=document.querySelector("#scroll-top");t.addEventListener("click",function(){window.scrollTo({top:0,behavior:"smooth"})}),window.addEventListener("scroll",function(){let e=window.scrollY;t.classList.toggle("js-scroll-up_hidden",e<700)}),window.addEventListener("load",()=>{window.scrollTo(0,0)})}();
-//# sourceMappingURL=index.04bb526a.js.map
+//# sourceMappingURL=index.125e1887.js.map
