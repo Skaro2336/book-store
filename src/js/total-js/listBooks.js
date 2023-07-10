@@ -1,8 +1,8 @@
-import { fetchCategoryBooks, fetchTopFiveBooks } from './API';
+import { fetchCategoryBooks, fetchTopFiveBooks } from './API.js';
 
-function markapCategoryList(listName) {
+function markapCategoryList(response) {
   const listCategoryBooks = document.querySelector('.list-category-books');
-  listName.forEach(e => {
+  response.forEach(e => {
     const listCategory = `
       <li>${e.list_name}</li>
     `;
@@ -10,9 +10,9 @@ function markapCategoryList(listName) {
   });
 }
 
-function markupCategoryList(books) {
+function markupCategoryList(response) {
   const list = document.querySelector('.books-container');
-  books.forEach(category => {
+  response.forEach(category => {
     const titleCategory = `
       <div class="section-category-for-books">
         <h2 class="title-category-name">${category.list_name}</h2>
@@ -46,7 +46,7 @@ function markupCategoryList(books) {
 async function listForCategory() {
   try {
     const response = await fetchCategoryBooks();
-    markapCategoryList(response);
+    console.log(markapCategoryList(response));
   } catch (error) {
     console.warn(error);
   }
@@ -55,6 +55,7 @@ async function listForCategory() {
 async function topBooks() {
   try {
     const response = await fetchTopFiveBooks();
+
     markupCategoryList(response);
   } catch (error) {
     console.warn(error);
