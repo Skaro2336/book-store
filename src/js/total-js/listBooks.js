@@ -4,7 +4,7 @@ function markapCategoryList(listName) {
   const listCategoryBooks = document.querySelector('.list-category-books');
   listName.forEach(e => {
     const listCategory = `
-      <li>${e.titleName}</li>
+      <li>${e.list_name}</li>
     `;
     listCategoryBooks.insertAdjacentHTML('beforeend', listCategory);
   });
@@ -38,6 +38,7 @@ function markupCategoryList(books) {
         <button class="books-btn" type="button">see more</button>
       </div>
     `;
+
     list.insertAdjacentHTML('beforeend', titleCategory);
   });
 }
@@ -45,10 +46,7 @@ function markupCategoryList(books) {
 async function listForCategory() {
   try {
     const response = await fetchCategoryBooks();
-    const listName = response.map(info => ({
-      titleName: info.list_name,
-    }));
-    markapCategoryList(listName);
+    markapCategoryList(response);
   } catch (error) {
     console.warn(error);
   }
