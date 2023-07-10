@@ -1,31 +1,62 @@
-import axios from 'axios';
-import Notiflix from 'notiflix';
-export async function fetchCategoryBooks() {
-  const BASE_URL = 'https://books-backend.p.goit.global/books/category-list';
+// import axios from 'axios';
+// import Notiflix from 'notiflix';
+// export async function fetchCategoryBooks() {
+//   const BASE_URL = 'https://books-backend.p.goit.global/books/category-list';
+//   try {
+//     const response = await axios.get(BASE_URL);
+//     if (response.status !== 200) {
+//       throw new Error(`Request failed with status ${response.status}`);
+//     }
+//     return response.data.map(item => ({
+//       list_name: item.list_name,
+//     }));
+//   } catch (error) {
+//     Notiflix.Notify.warning(
+//       `Oops! Something went wrong. You caught the following error: ${error.message}.`
+//     );
+//   }
+// }
+// export async function fetchTopFiveBooks() {
+//   const BASE_URL = 'https://books-backend.p.goit.global/books/top-books';
+//   try {
+//     const response = await axios.get(BASE_URL);
+//     if (response.status !== 200) {
+//       throw new Error(`Request failed with status ${response.status}`);
+//     }
+//     return response.data;
+//   } catch (error) {
+//     Notiflix.Notify.warning(
+//       `Oops! Something went wrong. You caught the following error: ${error.message}.`
+//     );
+//   }
+// }
+import Axios from 'axios';
+
+//Запит на топ книжок
+export async function getBestBooks() {
   try {
-    const response = await axios.get(BASE_URL);
-    if (response.status !== 200) {
-      throw new Error(`Request failed with status ${response.status}`);
-    }
-    return response.data.map(item => ({
-      list_name: item.list_name,
-    }));
+    const { data } = await Axios(
+      'https://books-backend.p.goit.global/books/top-books',
+      {}
+    );
+    return data;
   } catch (error) {
-    Notiflix.Notify.warning(
+    alert(
       `Oops! Something went wrong. You caught the following error: ${error.message}.`
     );
   }
 }
-export async function fetchTopFiveBooks() {
-  const BASE_URL = 'https://books-backend.p.goit.global/books/top-books';
+
+//Запит на книжки по категорії
+export async function getCategoryBooks(category) {
   try {
-    const response = await axios.get(BASE_URL);
-    if (response.status !== 200) {
-      throw new Error(`Request failed with status ${response.status}`);
-    }
-    return response.data;
+    const { data } = await Axios(
+      `https://books-backend.p.goit.global/books/category?category=${category}`,
+      {}
+    );
+    return data;
   } catch (error) {
-    Notiflix.Notify.warning(
+    alert(
       `Oops! Something went wrong. You caught the following error: ${error.message}.`
     );
   }
