@@ -1,18 +1,16 @@
-import { fetchCategoryBooks, fetchTopFiveBooks } from '../total-js/API';
-
+import { fetchCategoryBooks, fetchTopFiveBooks } from './API.js';
 function markapCategoryList(response) {
   const listCategoryBooks = document.querySelector('.list-category-books');
-  response.map(e => {
+  response.forEach(e => {
     const listCategory = `
       <li>${e.list_name}</li>
     `;
     listCategoryBooks.insertAdjacentHTML('beforeend', listCategory);
   });
 }
-
 function markupCategoryList(response) {
   const list = document.querySelector('.books-container');
-  response.map(category => {
+  response.forEach(category => {
     const titleCategory = `
       <div class="section-category-for-books">
         <h2 class="title-category-name">${category.list_name}</h2>
@@ -38,30 +36,24 @@ function markupCategoryList(response) {
         <button class="books-btn" type="button">see more</button>
       </div>
     `;
-
     list.insertAdjacentHTML('beforeend', titleCategory);
   });
 }
-
 async function listForCategory() {
   try {
     const response = await fetchCategoryBooks();
-
     markapCategoryList(response);
   } catch (error) {
     console.warn(error);
   }
 }
-
 async function topBooks() {
   try {
     const response = await fetchTopFiveBooks();
-
     markupCategoryList(response);
   } catch (error) {
     console.warn(error);
   }
 }
-
 listForCategory();
 topBooks();
