@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+import Notiflix from 'notiflix';
 export const fetchCategoryBooks = async () => {
   const BASE_URL = 'https://books-backend.p.goit.global/books/category-list';
 
@@ -12,7 +12,9 @@ export const fetchCategoryBooks = async () => {
 
     return response.data;
   } catch (error) {
-    throw new Error(`Request failed: ${error.message}`);
+    Notiflix.Notify.warning(
+      `Oops! Something went wrong. You caught the following error: ${error.message}.`
+    );
   }
 };
 
@@ -26,6 +28,8 @@ export const fetchTopFiveBooks = async () => {
     }
     return response.data;
   } catch (error) {
-    throw new Error(`Request failed: ${error.message}`);
+    Notiflix.Notify.warning(
+      `Oops! Something went wrong. You caught the following error: ${error.message}.`
+    );
   }
 };
