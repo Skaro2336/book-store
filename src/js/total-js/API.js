@@ -1,6 +1,7 @@
 import axios from 'axios';
 import Notiflix from 'notiflix';
-export const fetchCategoryBooks = async () => {
+
+export async function fetchCategoryBooks() {
   const BASE_URL = 'https://books-backend.p.goit.global/books/category-list';
 
   try {
@@ -16,13 +17,12 @@ export const fetchCategoryBooks = async () => {
       `Oops! Something went wrong. You caught the following error: ${error.message}.`
     );
   }
-};
-
-export const fetchTopFiveBooks = async () => {
+}
+export async function fetchTopFiveBooks() {
   const BASE_URL = 'https://books-backend.p.goit.global/books/top-books';
   try {
     const response = await axios.get(BASE_URL);
-
+    console.log();
     if (response.status !== 200) {
       throw new Error(`Request failed with status ${response.status}`);
     }
@@ -32,4 +32,4 @@ export const fetchTopFiveBooks = async () => {
       `Oops! Something went wrong. You caught the following error: ${error.message}.`
     );
   }
-};
+}
