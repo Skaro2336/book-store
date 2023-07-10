@@ -1,9 +1,10 @@
-import NewApiService from './API';
+import { fetchCategoryBooks, fetchTopFiveBooks } from './API';
 
-const newApiService = new NewApiService();
+listForCategory();
+topBooks();
 async function listForCategory() {
   try {
-    const response = await newApiService.fetchCategoryBooks();
+    const response = await fetchCategoryBooks();
 
     const listName = response.map(info => ({
       titleName: info.list_name,
@@ -11,26 +12,24 @@ async function listForCategory() {
 
     markapCategoryList(listName);
   } catch (error) {
-    console.warn(error);
+    console.log(error);
   }
 }
 
-listForCategory();
-
 function markapCategoryList(listName) {
-  const listCategory = listName.map(e => {
-    return `
+  const listCategoryBooks = document.querySelector('.list-category-books');
+  listName.map(e => {
+    const listCategory = `
   <li>${e.titleName}</li>
 `;
+    listCategoryBooks.insertAdjacentHTML('beforeend', listCategory);
   });
-  const listCategoryBooks = document.querySelector('.list-category-books');
-  listCategoryBooks.insertAdjacentHTML('beforeend', listCategory.join(''));
 }
 async function topBooks() {
   try {
-    const response = await newApiService.fetchTopFiveBooks();
+    const response = await fetchTopFiveBooks();
     console.log(response);
-
+    markupCategoryList(response);
     function markupCategoryList(books) {
       const list = document.querySelector('.books-container');
 
@@ -65,11 +64,7 @@ async function topBooks() {
         list.insertAdjacentHTML('beforeend', titleCategory);
       });
     }
-
-    markupCategoryList(response);
   } catch (error) {
-    console.warn(error);
+    console.log(error);
   }
 }
-
-topBooks();
