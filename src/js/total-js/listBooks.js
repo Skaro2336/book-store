@@ -1,4 +1,4 @@
-import { fetchCategoryBooks, fetchTopFiveBooks } from './API.js';
+import { fetchCategoryBooks, fetchTopFiveBooks } from '../total-js/API';
 
 function markapCategoryList(response) {
   const listCategoryBooks = document.querySelector('.list-category-books');
