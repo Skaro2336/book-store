@@ -12,7 +12,7 @@ export const fetchCategoryBooks = async () => {
 
     return response.data;
   } catch (error) {
-    throw new Error(`Request failed: ${error.message}`);
+    console.warn(`Request failed: ${error.message}`);
   }
 };
 
@@ -26,6 +26,6 @@ export const fetchTopFiveBooks = async () => {
     // }
     return response.data;
   } catch (error) {
-    throw new Error(`Request failed: ${error.message}`);
+    console.warn(`Request failed: ${error.message}`);
   }
 };
