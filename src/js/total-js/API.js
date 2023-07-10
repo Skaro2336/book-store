@@ -6,13 +6,13 @@ export const fetchCategoryBooks = async () => {
   try {
     const response = await axios.get(BASE_URL);
 
-    // if (response.status !== 200) {
-    //   throw new Error(`Request failed with status ${response.status}`);
-    // }
+    if (response.status !== 200) {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
 
     return response.data;
   } catch (error) {
-    console.warn(`Request failed: ${error.message}`);
+    throw new Error(`Request failed: ${error.message}`);
   }
 };
 
@@ -21,11 +21,11 @@ export const fetchTopFiveBooks = async () => {
   try {
     const response = await axios.get(BASE_URL);
 
-    // if (response.status !== 200) {
-    //   throw new Error(`Request failed with status ${response.status}`);
-    // }
+    if (response.status !== 200) {
+      throw new Error(`Request failed with status ${response.status}`);
+    }
     return response.data;
   } catch (error) {
-    console.warn(`Request failed: ${error.message}`);
+    throw new Error(`Request failed: ${error.message}`);
   }
 };
