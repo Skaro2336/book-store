@@ -8,6 +8,7 @@
 @import url('./total-css/category-books.css');
 @import url('./total-css/best-sellers.css');
 @import url('./total-css/shop-list-di.css');
+@import url('./total-css/aside-menu.css');
 
 
 :root {
@@ -32,6 +33,8 @@ body {
   background-color: var(--body-background-color);
 
   transition: 0.5s;
+
+  margin: 0; /*Прибрати як поставимо modern-normalize */
 }
 
 ul {
