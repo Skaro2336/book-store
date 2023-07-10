@@ -2,7 +2,7 @@ import { fetchCategoryBooks, fetchTopFiveBooks } from './API.js';
 
 function markapCategoryList(response) {
   const listCategoryBooks = document.querySelector('.list-category-books');
-  response.forEach(e => {
+  response.map(e => {
     const listCategory = `
       <li>${e.list_name}</li>
     `;
@@ -12,7 +12,7 @@ function markapCategoryList(response) {
 
 function markupCategoryList(response) {
   const list = document.querySelector('.books-container');
-  response.forEach(category => {
+  response.map(category => {
     const titleCategory = `
       <div class="section-category-for-books">
         <h2 class="title-category-name">${category.list_name}</h2>
@@ -46,7 +46,8 @@ function markupCategoryList(response) {
 async function listForCategory() {
   try {
     const response = await fetchCategoryBooks();
-    console.log(markapCategoryList(response));
+
+    markapCategoryList(response);
   } catch (error) {
     console.warn(error);
   }
