@@ -30,6 +30,7 @@
 }
 
 .header-link-home {
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -64,6 +65,9 @@
   border-radius: 36px;
   fill: #111;
 }
+.header-shopping {
+  text-transform: uppercase;
+}
 
 .header-nav {
   display: flex;
@@ -71,8 +75,8 @@
 }
 
 .shopping-icon {
-  fill: inherit;
-  position: relative;
+  fill: #111;
+  position:relative;
   width: 20px;
   height: 20px;
 }
@@ -344,7 +348,6 @@
 
   .header-nav {
     gap: 24px;
-    align-items: center;
   }
 
   .theme-switch {
