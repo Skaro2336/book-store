@@ -1,4 +1,5 @@
-import { fetchCategoryBooks, fetchTopFiveBooks } from './API';
+import NewApiService from './API';
+const newApiService = new NewApiService();
 function markapCategoryList(response) {
   const listCategoryBooks = document.querySelector('.list-category-books');
   response.forEach(e => {
@@ -19,7 +20,7 @@ function markupCategoryList(response) {
             .map(book => {
               return `
                 <li>
-                  <a href="#" data-id="${book._id}">
+                  <div data-id="${book._id}">
                     <div class="card-book">
                       <img class="books-card-img" src="${book.book_image}" alt="${book.title}" width="180" height="256" loading="lazy">
                     </div>
@@ -27,7 +28,7 @@ function markupCategoryList(response) {
                       <h3 class="title-books">${book.title}</h3>
                       <p class="name-author">${book.author}</p>
                     </div>
-                  </a>
+                  </div>
                 </li>
               `;
             })
@@ -41,7 +42,7 @@ function markupCategoryList(response) {
 }
 async function listForCategory() {
   try {
-    const response = await fetchCategoryBooks();
+    const response = await newApiService.fetchCategoryBooks();
     markapCategoryList(response);
   } catch (error) {
     console.warn(error);
@@ -49,7 +50,7 @@ async function listForCategory() {
 }
 async function topBooks() {
   try {
-    const response = await fetchTopFiveBooks();
+    const response = await newApiService.fetchTopFiveBooks();
     markupCategoryList(response);
   } catch (error) {
     console.warn(error);
